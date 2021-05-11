@@ -1,6 +1,6 @@
 # Not so corsy anymore.
 
-Usage: just make a simple POST request with the following format:
+Usage: just make a simple POST request to `/getdata` with the following format:
 
 ```js
 fetch(url, {

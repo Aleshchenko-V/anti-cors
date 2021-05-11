@@ -34,6 +34,8 @@ app.use(function(err, req, res, next) {
     res.send('500 - server error')
 })
 
-app.listen(app.get('port'), function() {
-    console.log('Express started on http://localhost:' + app.get('port') + ';')
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, function() {
+    console.log(`Server running on port ${PORT}`)
 })
